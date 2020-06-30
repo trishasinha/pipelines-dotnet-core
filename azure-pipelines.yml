@@ -1,9 +1,14 @@
 # ASP.NET Core
 - task: AppCenterTest@1
   inputs:
+    appFile: 'fff'
     artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest'
     frameworkOption: 'appium'
+    appiumBuildDirectory: 'ff'
+    prepareOptions: 'ff'
     credentialsOption: 'serviceEndpoint'
+    appSlug: 'ff'
+    devices: 'ff'
     localeOption: 'en_US'
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
