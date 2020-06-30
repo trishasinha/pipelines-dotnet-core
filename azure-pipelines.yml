@@ -1,6 +1,6 @@
 # App Center test
 # Test app packages with Visual Studio App Center
- -task: AppCenterTest@1
+- task: AppCenterTest@1
   inputs:
     appFile: 
     #artifactsDirectory: '$(Build.ArtifactStagingDirectory)/AppCenterTest' 
