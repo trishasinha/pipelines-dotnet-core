@@ -31,3 +31,9 @@ steps:
     testResultsFormat: 'JUnit'
     testResultsFiles: 'Test-Suite.xml'
     searchFolder: '$(searchfolder)'
+
+- task: CopyFiles@2
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)'
+    Contents: '**\bin\$(BuildConfiguration)\**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)''
