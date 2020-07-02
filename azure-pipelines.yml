@@ -30,3 +30,4 @@ steps:
   inputs:
     testResultsFormat: 'JUnit'
     testResultsFiles: 'Test-Suite.xml'
+    searchFolder: 'C:\Users\Administrator\Downloads'
