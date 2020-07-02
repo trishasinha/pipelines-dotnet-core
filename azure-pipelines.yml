@@ -12,6 +12,7 @@ pool:
 
 variables:
   buildConfiguration: 'Release'
+  System.DefaultWorkingDirectory: 'C:\Users\Administrator\Downloads'
 
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
@@ -28,5 +29,4 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '**/TEST-*.xml'
-    failTaskOnFailedTests: true
+    testResultsFiles: 'Test-Suite.xml'
