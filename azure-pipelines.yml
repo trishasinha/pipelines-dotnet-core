@@ -24,6 +24,7 @@ steps:
     credentialsOption: 'serviceEndpoint'
     localeOption: 'en_US'
 
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
